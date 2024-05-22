@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA Roles Example</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main role="main">
+        <header>
+            <h1 id="main-heading">Welcome to Our Website</h1>
+        </header>
+
+        <section aria-labelledby="section-heading">
+            <h2 id="section-heading">About Us</h2>
+            <p>We provide the best services to our customers.</p>
+        </section>
+
+        <!-- Form -->
+        <form role="form" aria-labelledby="form-heading">
+            <h2 id="form-heading">Contact Us</h2>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" aria-required="true">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" aria-required="true">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <!-- Complementary content -->
+    <aside role="complementary" aria-labelledby="sidebar-heading">
+        <h2 id="sidebar-heading">Latest News</h2>
+        <p>Check out the latest updates from our blog.</p>
+    </aside>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
